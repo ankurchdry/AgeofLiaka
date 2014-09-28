@@ -24,18 +24,6 @@
                                     <rect key="frame" x="16" y="120" width="316" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3s-2r-fWC">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Convert To Dog Years">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="179" width="169" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="convertLaikaAgeToHumanYears:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vdK-br-x8q"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AgeOfLaika 2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ubn-fp-4Q9">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -51,22 +39,48 @@
                                     <rect key="frame" x="21" y="45" width="273" height="50"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3s-2r-fWC">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Convert To Dog Years">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="90" y="170" width="169" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="convertLaikaAgeToHumanYears:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vdK-br-x8q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaa-eP-J28">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Convert To Real Dog Years">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="83" y="200" width="191" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="convertToRealDogYear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QG1-CE-gRH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="cI7-O0-oTe"/>
-                                <exclude reference="p3s-2r-fWC"/>
                                 <exclude reference="Ubn-fp-4Q9"/>
                                 <exclude reference="e4a-Y1-4QD"/>
+                                <exclude reference="p3s-2r-fWC"/>
+                                <exclude reference="zaa-eP-J28"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="cI7-O0-oTe"/>
-                                <include reference="p3s-2r-fWC"/>
                                 <include reference="Ubn-fp-4Q9"/>
                                 <include reference="e4a-Y1-4QD"/>
+                                <include reference="p3s-2r-fWC"/>
+                                <include reference="zaa-eP-J28"/>
                             </mask>
                         </variation>
                     </view>

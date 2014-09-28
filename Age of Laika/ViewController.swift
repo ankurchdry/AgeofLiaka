@@ -40,6 +40,33 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func convertToRealDogYear(sender: UIButton) {
+        
+        let sizeAgeOfLiaka = Double ((enterNumberAgeOfLiaka.text as NSString).doubleValue)
+        
+        let constantAfterWhichAgeConversionChanges = 2
+        
+        let conversionConstantForFirstTwoYears = 10.5
+        
+        let conversionConstantForRestOfYears = 4
+        
+        displayLaikaAge.hidden = false
+        
+        if sizeAgeOfLiaka <= 2 {
+            
+            displayLaikaAge.text = "\(sizeAgeOfLiaka * conversionConstantForFirstTwoYears )" + " Age In Real Years"
+            
+        }
+            /*This part of code will evaluate any number greater than 2 and use the factor constant to either mulitple by  10.5 or 4 */
+        else
+        {
+            displayLaikaAge.text = "\((Double(constantAfterWhichAgeConversionChanges) * conversionConstantForFirstTwoYears)  +  ((sizeAgeOfLiaka - Double (constantAfterWhichAgeConversionChanges)) * Double (conversionConstantForRestOfYears) ) )" + " Age In Real Years"
+            
+        }
+        
+        enterNumberAgeOfLiaka.resignFirstResponder()
+        
+    }
 
 }
 
